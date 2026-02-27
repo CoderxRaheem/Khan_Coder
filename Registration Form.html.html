@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+
+
+        h1 {
+            margin: 15px 10px;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 0 10px 5px black;
+            border: solid black;
+            border-radius: 5px;
+            text-shadow: 10px 10px 10px 5px black,red,blue,green;
+            animation: color 2s ease-in infinite;
+            transition: all 1s ease 0.5s;
+        }
+
+        h1:hover {
+            box-shadow: 0 0 5px 5px red;
+            
+            
+        }
+
+        @keyframes color {
+            0% { 
+                color: black;
+             }
+            25% {
+                 color: red;
+            }
+            50% {
+                 color: blue;
+            }
+            75% {
+                 color: green;
+            }
+            100% {
+                 color: black,red,blue,green; 
+            }
+        }
+
+        .container {
+    
+            margin: 25px 50px;
+            padding: 20px;
+            height: 600px;
+            border: solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 5px black;
+            border-radius: 5px;
+            transition: all 1s ease 0.5s;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 5px 5px blue;
+        }
+
+        .one {
+            margin: 10px 15px;
+    
+        }
+
+        .one h2 {
+            margin: 10px;
+            padding: 10px;
+        }
+
+       .a {
+        display: inline;
+        float: left;
+        margin-left: 60px;
+       }
+
+       .b {
+        
+        display: inline;
+        float: left;
+        margin-left: 75px;
+        
+       }
+
+       .c {
+        display: inline;
+        margin-left: 100px;
+       }
+
+       
+       input {
+        margin-left: 50px;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        font-size: 15px;
+        box-shadow: 5px 5px 5px 2px black;
+        border-radius: 5px;
+       }
+
+       input:focus {
+        box-shadow: 5px 5px 5px 2px red,blue,green;
+        animation: shadow 2s ease-in infinite;
+       }
+
+       @keyframes shadow {
+        0% {
+            box-shadow: 5px 5px 5px 2px black;
+        }
+        25% {
+            box-shadow: 5px 5px 5px 2px red;
+        }
+        50% {
+            box-shadow: 5px 5px 5px 2px blue;
+        }
+        75% {
+            box-shadow: 5px 5px 5px 2px green;
+        }
+        100% {
+            box-shadow: 5px 5px 5px 2px black,red,blue,green;
+        }
+        
+       }
+
+       .c label {
+        margin-left: 50px;
+       }
+
+       .c input {
+        margin-left: 150px;
+       }
+
+       .b label {
+        margin-left: 50px;
+       }
+    
+       label {
+        margin-left: 75px;
+        font-size: 18px;
+        font-weight: bold;
+        
+       } 
+       
+
+       .three h2 {
+        margin: 10px;
+        padding: 10px;
+       }
+
+       .two {
+        margin: 10px 15px;
+       }
+
+       #c label {
+        margin-left: 115px;
+       }
+
+       #c input {
+        margin-left: 215px;
+       }
+
+       #a input {
+        margin-left: 60px;
+       }
+
+       select {
+        padding: 5px 20px;
+        font-size: 20px;
+        margin-left: 50px;
+        box-shadow: 5px 5px 5px 2px black;
+        border-radius: 5px;
+       }
+
+       .button button {
+        margin: 20px 50px;
+        padding: 10px 35px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        background: white;
+       }
+
+       button:hover {
+        background: black;
+        color: white;
+        box-shadow: 0 0 5px 5px green;
+        animation: shadow 2s ease infinite;
+        transition: all 1s ease 0.5s;
+       
+       }
+
+       @keyframes shadow {
+        0% {
+            box-shadow:  0 0 5px 5px black;
+            
+        }
+        25% {
+            box-shadow: 0 0 5px 5px black;
+             
+        }
+        50% {
+            box-shadow: 0 0 5px 5px black,green;
+            
+        }
+        75% {
+            box-shadow: 0 0 5px 5px green;
+             
+        }
+        100% {
+            box-shadow: 0 0 5px 5px green;
+            
+        }
+        
+       }
+
+    </style>
+</head>
+<body>
+
+    <!-- Registration Form -->
+
+    <h1>Registration Form</h1>
+    <div class="container">
+        <form>
+            <div class="one">
+                <h2>Personal Information:</h2>
+                <div class="a" id="a">
+                    <label for="name">Enter your name:
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </label>
+                </div>
+                
+                <div class="b">
+                    <label for="email">Enter your email:
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </label>
+                </div>
+                
+                <div class="c">
+                    <label for="birth">Date of Birth:
+                        <br>
+                        <input type="date" id="birth" name="birth" required>
+                    </label>
+                </div>
+            </div>
+            <br><br>
+            <div class="two">
+                <div class="a">
+                    <label for="num">Enter your number:
+                        <br>
+                        <input type="tel" id="num" name="num" placeholder="Phone Number">
+                    </label>
+                </div>
+                 
+                <div class="b">
+                    <label for="gender">Choose your gender:
+                        <br>
+                        <select name="gender" id="gender">
+                        <option hidden>Gender:</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </label>
+                </div>
+                
+                <div class="c">
+                    <label for="occupation">Occupation:
+                        <br>
+                        <input type="text" id="occupation" name="occupation" placeholder="Occupation">
+                    </label>
+                </div>
+            </div>
+            <br><br>
+            <div class="three">
+                <h2>Identity Details:</h2>
+                <div class="a">
+                    <label for="id type">Enter your ID type:
+                        <br>
+                        <input type="text" id="id type" name="id type" placeholder="Enter ID type">
+                    </label>
+                </div>
+                
+                <div class="b">
+                    <label for="id number">Enter your ID number:
+                        <br>
+                        <input type="text" id="id number" name="id number" placeholder="ID Number">
+                    </label>
+                </div>
+                <div class="c">
+                    
+                    <label for="issued authority">Issued:
+                        <br>
+                        <input type="text" id="issued authority" name="issued authority" placeholder="Issuing Authority">
+                    </label>
+                </div>
+            </div>
+            <br><br>
+            <div class="four">
+                <div class="a">
+                    <label for="issue state">Enter the issuing state:
+                        <br>
+                        <input type="text" id="issue state" name="issue state" placeholder="Issuing State">
+                    </label>
+                </div>
+                
+                <div class="b">
+                    <label for="issue date">Enter the issue date:
+                        <br>
+                        <input type="date" id="issue date" name="issue date" placeholder="Enter issue date">
+                    </label>
+                    
+                </div>
+
+                <div class="c" id="c">
+                    <label for="expiry date">Expiry date:
+                        <br>
+                        <input type="date" id="expiry date" name="expiry date">
+                    </label>
+                </div>
+
+            </div>
+                
+                
+            </div>
+        </form>
+    </div>
+
+    <div class="button">
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>
